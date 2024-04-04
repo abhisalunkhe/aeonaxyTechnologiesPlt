@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title>Add avtar</title>i
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fff;
+    }
+
+    nav {
+      font-family: cursive;
+    }
+
+    .brand-logo {
+      color: #ea4c89;
+      margin-bottom: 1rem;
+    }
+
+    .avatar {
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .choose-image-btn {
+      border: 2px solid rgb(210, 210, 243);
+      color: #060606;
+      border-radius: 5%;
+    }
+
+    .location-input {
+      border: none;
+      border-bottom: 2px solid #000;
+      border-radius: 0;
+      margin-bottom: 1rem;
+    }
+
+    .next-btn {
+      background-color: #ee268d;
+      border: none;
+      color: #fff;
+      width: 30%;
+    }
+
+    .footer-text {
+      font-size: 0.8rem;
+      color: #6c757d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <h2><span style="color: #ea4c89;">dribbble</span></h2>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="text-center">
+      <h1>Welcome! Let's create your profile</h1>
+      <p class="text-muted">Let others get to know you better! You can do these later</p>
+
+      <h3 class="mt-4">Add an avatar</h3>
+      <img src="./assets/profile.jpg" alt="Avatar" class="avatar img-fluid" style="width: 120px; height: 120px;">
+      <div class="my-3">
+        <button class="btn choose-image-btn" class="">Choose image</button>
+        <p class="my-2">Or choose one of our defaults</p>
+      </div>
+
+      <h3 class="mt-4">Add your location</h3>
+      <input type="text" class="form-control location-input" value="Enter a location" readonly>
+
+      <button class="btn next-btn mt-4" onclick="myfun()">Next</button>
+      <p class="footer-text mt-3">or Press RETURN</p>
+    </div>
+  </div>
+
+  <script>
+    function myfun(){
+      window.location.href = "./dribbbleServices.html";
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
